@@ -13,6 +13,7 @@ while True:
 if temperature_scale == "C":
     converted_scale = "F"
     converted_number = ((1.8 * temperature_number) + int(32))
+#Review: Om användaren har matat in fel scale (ex. 22W) kommer programmet omvandla temperaturen till Celsius utan att meddela användaren om inputfel. Annars jättebra idé  
 else:
     converted_scale = "C"
     converted_number = (temperature_number - 32) / 1.8
